@@ -1,0 +1,860 @@
+[
+  {
+    "name": "Bananskal",
+    "category": "Matavfall",
+    "icon": "🟫",
+    "note": "Lägg i matavfall."
+  },
+  {
+    "name": "Äppelskrutt",
+    "category": "Matavfall",
+    "icon": "🟫",
+    "note": "Matavfall."
+  },
+  {
+    "name": "Apelsinskal",
+    "category": "Matavfall",
+    "icon": "🟫",
+    "note": "Matavfall."
+  },
+  {
+    "name": "Potatisskal",
+    "category": "Matavfall",
+    "icon": "🟫",
+    "note": "Matavfall."
+  },
+  {
+    "name": "Kaffesump",
+    "category": "Matavfall",
+    "icon": "🟫",
+    "note": "Matavfall."
+  },
+  {
+    "name": "Kaffefilter",
+    "category": "Matavfall",
+    "icon": "🟫",
+    "note": "Använt kaffefilter går med matavfallet."
+  },
+  {
+    "name": "Tepåse",
+    "category": "Matavfall",
+    "icon": "🟫",
+    "note": "Matavfall."
+  },
+  {
+    "name": "Tepåse förpackning",
+    "category": "Matavfall",
+    "icon": "🟫",
+    "note": "Matavfall."
+  },
+  {
+    "name": "Tepåse emballage",
+    "category": "Matavfall",
+    "icon": "🟫",
+    "note": "Matavfall."
+  },
+  {
+    "name": "Äggskal",
+    "category": "Matavfall",
+    "icon": "🟫",
+    "note": "Matavfall."
+  },
+  {
+    "name": "Ben",
+    "category": "Matavfall",
+    "icon": "🟫",
+    "note": "Matavfall."
+  },
+  {
+    "name": "Fiskrens",
+    "category": "Matavfall",
+    "icon": "🟫",
+    "note": "Matavfall."
+  },
+  {
+    "name": "Matrest",
+    "category": "Matavfall",
+    "icon": "🟫",
+    "note": "Matavfall."
+  },
+  {
+    "name": "Hushållspapper med matrester",
+    "category": "Matavfall",
+    "icon": "🟫",
+    "note": "Matrelaterat hushållspapper kan läggas i matavfallet."
+  },
+  {
+    "name": "Servett efter måltid",
+    "category": "Matavfall",
+    "icon": "🟫",
+    "note": "Använd servett i samband med måltid går med matavfallet."
+  },
+  {
+    "name": "Kattströ",
+    "category": "Restavfall",
+    "icon": "⚫",
+    "note": "Restavfall."
+  },
+  {
+    "name": "Kattbajs",
+    "category": "Restavfall",
+    "icon": "⚫",
+    "note": "Restavfall. Lägg i väl försluten påse."
+  },
+  {
+    "name": "Hundbajs",
+    "category": "Restavfall",
+    "icon": "⚫",
+    "note": "Restavfall. Lägg i väl försluten påse."
+  },
+  {
+    "name": "Blöja",
+    "category": "Restavfall",
+    "icon": "⚫",
+    "note": "Restavfall."
+  },
+  {
+    "name": "Bindor",
+    "category": "Restavfall",
+    "icon": "⚫",
+    "note": "Restavfall."
+  },
+  {
+    "name": "Tampong",
+    "category": "Restavfall",
+    "icon": "⚫",
+    "note": "Restavfall."
+  },
+  {
+    "name": "Våtservett",
+    "category": "Restavfall",
+    "icon": "⚫",
+    "note": "Restavfall."
+  },
+  {
+    "name": "Snus",
+    "category": "Restavfall",
+    "icon": "⚫",
+    "note": "Restavfall."
+  },
+  {
+    "name": "Tandborste",
+    "category": "Restavfall",
+    "icon": "⚫",
+    "note": "Inte en plastförpackning. Restavfall."
+  },
+  {
+    "name": "Diskborste",
+    "category": "Restavfall",
+    "icon": "⚫",
+    "note": "Restavfall."
+  },
+  {
+    "name": "Disktrasa",
+    "category": "Restavfall",
+    "icon": "⚫",
+    "note": "Restavfall."
+  },
+  {
+    "name": "Bomullspinne",
+    "category": "Restavfall",
+    "icon": "⚫",
+    "note": "Restavfall."
+  },
+  {
+    "name": "Rakhyvel",
+    "category": "Restavfall",
+    "icon": "⚫",
+    "note": "Restavfall."
+  },
+  {
+    "name": "Presentband",
+    "category": "Restavfall",
+    "icon": "⚫",
+    "note": "Restavfall."
+  },
+  {
+    "name": "Tejp",
+    "category": "Restavfall",
+    "icon": "⚫",
+    "note": "Restavfall."
+  },
+  {
+    "name": "Post-it",
+    "category": "Restavfall",
+    "icon": "⚫",
+    "note": "Restavfall."
+  },
+  {
+    "name": "CD-skiva",
+    "category": "Restavfall",
+    "icon": "⚫",
+    "note": "Restavfall."
+  },
+  {
+    "name": "DVD-skiva",
+    "category": "Restavfall",
+    "icon": "⚫",
+    "note": "Restavfall."
+  },
+  {
+    "name": "Plastpåse",
+    "category": "Plastförpackning",
+    "icon": "🟨",
+    "note": "Plastförpackning."
+  },
+  {
+    "name": "Plastpåse förpackning",
+    "category": "Plastförpackning",
+    "icon": "🟨",
+    "note": "Plastförpackning."
+  },
+  {
+    "name": "Plastpåse emballage",
+    "category": "Plastförpackning",
+    "icon": "🟨",
+    "note": "Plastförpackning."
+  },
+  {
+    "name": "Fryspåse",
+    "category": "Plastförpackning",
+    "icon": "🟨",
+    "note": "Plastförpackning."
+  },
+  {
+    "name": "Fryspåse förpackning",
+    "category": "Plastförpackning",
+    "icon": "🟨",
+    "note": "Plastförpackning."
+  },
+  {
+    "name": "Fryspåse emballage",
+    "category": "Plastförpackning",
+    "icon": "🟨",
+    "note": "Plastförpackning."
+  },
+  {
+    "name": "Brödpåse",
+    "category": "Plastförpackning",
+    "icon": "🟨",
+    "note": "Plastförpackning."
+  },
+  {
+    "name": "Brödpåse förpackning",
+    "category": "Plastförpackning",
+    "icon": "🟨",
+    "note": "Plastförpackning."
+  },
+  {
+    "name": "Brödpåse emballage",
+    "category": "Plastförpackning",
+    "icon": "🟨",
+    "note": "Plastförpackning."
+  },
+  {
+    "name": "Plastfolie",
+    "category": "Plastförpackning",
+    "icon": "🟨",
+    "note": "Plastförpackning."
+  },
+  {
+    "name": "Chips påse",
+    "category": "Plastförpackning",
+    "icon": "🟨",
+    "note": "Plastförpackning. Metalliserad plast räknas som plastförpackning när plast är huvudmaterial."
+  },
+  {
+    "name": "Chips påse förpackning",
+    "category": "Plastförpackning",
+    "icon": "🟨",
+    "note": "Plastförpackning. Metalliserad plast räknas som plastförpackning när plast är huvudmaterial."
+  },
+  {
+    "name": "Chips påse emballage",
+    "category": "Plastförpackning",
+    "icon": "🟨",
+    "note": "Plastförpackning. Metalliserad plast räknas som plastförpackning när plast är huvudmaterial."
+  },
+  {
+    "name": "Chipsförpackning",
+    "category": "Plastförpackning",
+    "icon": "🟨",
+    "note": "Plastförpackning."
+  },
+  {
+    "name": "Godispåse",
+    "category": "Plastförpackning",
+    "icon": "🟨",
+    "note": "Plastförpackning när plast är huvudmaterial."
+  },
+  {
+    "name": "Godispåse förpackning",
+    "category": "Plastförpackning",
+    "icon": "🟨",
+    "note": "Plastförpackning när plast är huvudmaterial."
+  },
+  {
+    "name": "Godispåse emballage",
+    "category": "Plastförpackning",
+    "icon": "🟨",
+    "note": "Plastförpackning när plast är huvudmaterial."
+  },
+  {
+    "name": "Godisförpackning",
+    "category": "Plastförpackning",
+    "icon": "🟨",
+    "note": "Plastförpackning när plast är huvudmaterial."
+  },
+  {
+    "name": "Latz påse",
+    "category": "Plastförpackning",
+    "icon": "🟨",
+    "note": "Plastförpackning."
+  },
+  {
+    "name": "Latz påse förpackning",
+    "category": "Plastförpackning",
+    "icon": "🟨",
+    "note": "Plastförpackning."
+  },
+  {
+    "name": "Latz påse emballage",
+    "category": "Plastförpackning",
+    "icon": "🟨",
+    "note": "Plastförpackning."
+  },
+  {
+    "name": "Kattmatspåse",
+    "category": "Plastförpackning",
+    "icon": "🟨",
+    "note": "Plastförpackning när plast är huvudmaterial."
+  },
+  {
+    "name": "Kattmatspåse förpackning",
+    "category": "Plastförpackning",
+    "icon": "🟨",
+    "note": "Plastförpackning när plast är huvudmaterial."
+  },
+  {
+    "name": "Kattmatspåse emballage",
+    "category": "Plastförpackning",
+    "icon": "🟨",
+    "note": "Plastförpackning när plast är huvudmaterial."
+  },
+  {
+    "name": "Yoghurtburk",
+    "category": "Plastförpackning",
+    "icon": "🟨",
+    "note": "Plastförpackning."
+  },
+  {
+    "name": "Plastlock",
+    "category": "Plastförpackning",
+    "icon": "🟨",
+    "note": "Plastförpackning när det är en del av förpackningen."
+  },
+  {
+    "name": "Schampoflaska",
+    "category": "Plastförpackning",
+    "icon": "🟨",
+    "note": "Plastförpackning."
+  },
+  {
+    "name": "Tandkrämstub",
+    "category": "Plastförpackning",
+    "icon": "🟨",
+    "note": "Plastförpackning."
+  },
+  {
+    "name": "Plasttråg",
+    "category": "Plastförpackning",
+    "icon": "🟨",
+    "note": "Plastförpackning."
+  },
+  {
+    "name": "Mjölkpaket",
+    "category": "Pappersförpackning",
+    "icon": "🟦",
+    "note": "Pappersförpackning."
+  },
+  {
+    "name": "Juicepaket",
+    "category": "Pappersförpackning",
+    "icon": "🟦",
+    "note": "Pappersförpackning."
+  },
+  {
+    "name": "Yoghurtkartong",
+    "category": "Pappersförpackning",
+    "icon": "🟦",
+    "note": "Pappersförpackning."
+  },
+  {
+    "name": "Yoghurtkartong förpackning",
+    "category": "Pappersförpackning",
+    "icon": "🟦",
+    "note": "Pappersförpackning."
+  },
+  {
+    "name": "Yoghurtkartong emballage",
+    "category": "Pappersförpackning",
+    "icon": "🟦",
+    "note": "Pappersförpackning."
+  },
+  {
+    "name": "Cornflakespaket",
+    "category": "Pappersförpackning",
+    "icon": "🟦",
+    "note": "Pappersförpackning."
+  },
+  {
+    "name": "Äggkartong",
+    "category": "Pappersförpackning",
+    "icon": "🟦",
+    "note": "Pappersförpackning."
+  },
+  {
+    "name": "Äggkartong förpackning",
+    "category": "Pappersförpackning",
+    "icon": "🟦",
+    "note": "Pappersförpackning."
+  },
+  {
+    "name": "Äggkartong emballage",
+    "category": "Pappersförpackning",
+    "icon": "🟦",
+    "note": "Pappersförpackning."
+  },
+  {
+    "name": "Pizzakartong",
+    "category": "Pappersförpackning",
+    "icon": "🟦",
+    "note": "Pappersförpackning. Skrapa bort matrester."
+  },
+  {
+    "name": "Pizzakartong förpackning",
+    "category": "Pappersförpackning",
+    "icon": "🟦",
+    "note": "Pappersförpackning. Skrapa bort matrester."
+  },
+  {
+    "name": "Pizzakartong emballage",
+    "category": "Pappersförpackning",
+    "icon": "🟦",
+    "note": "Pappersförpackning. Skrapa bort matrester."
+  },
+  {
+    "name": "Skokartong",
+    "category": "Pappersförpackning",
+    "icon": "🟦",
+    "note": "Pappersförpackning."
+  },
+  {
+    "name": "Skokartong förpackning",
+    "category": "Pappersförpackning",
+    "icon": "🟦",
+    "note": "Pappersförpackning."
+  },
+  {
+    "name": "Skokartong emballage",
+    "category": "Pappersförpackning",
+    "icon": "🟦",
+    "note": "Pappersförpackning."
+  },
+  {
+    "name": "Presentkartong",
+    "category": "Pappersförpackning",
+    "icon": "🟦",
+    "note": "Pappersförpackning."
+  },
+  {
+    "name": "Presentkartong förpackning",
+    "category": "Pappersförpackning",
+    "icon": "🟦",
+    "note": "Pappersförpackning."
+  },
+  {
+    "name": "Presentkartong emballage",
+    "category": "Pappersförpackning",
+    "icon": "🟦",
+    "note": "Pappersförpackning."
+  },
+  {
+    "name": "Mjölpåse av papper",
+    "category": "Pappersförpackning",
+    "icon": "🟦",
+    "note": "Pappersförpackning."
+  },
+  {
+    "name": "Mjölpåse av papper förpackning",
+    "category": "Pappersförpackning",
+    "icon": "🟦",
+    "note": "Pappersförpackning."
+  },
+  {
+    "name": "Mjölpåse av papper emballage",
+    "category": "Pappersförpackning",
+    "icon": "🟦",
+    "note": "Pappersförpackning."
+  },
+  {
+    "name": "Sockerpåse av papper",
+    "category": "Pappersförpackning",
+    "icon": "🟦",
+    "note": "Pappersförpackning."
+  },
+  {
+    "name": "Sockerpåse av papper förpackning",
+    "category": "Pappersförpackning",
+    "icon": "🟦",
+    "note": "Pappersförpackning."
+  },
+  {
+    "name": "Sockerpåse av papper emballage",
+    "category": "Pappersförpackning",
+    "icon": "🟦",
+    "note": "Pappersförpackning."
+  },
+  {
+    "name": "Presentpapper",
+    "category": "Pappersförpackning",
+    "icon": "🟦",
+    "note": "Om det är pappersbaserat förpackningspapper, sortera som pappersförpackning."
+  },
+  {
+    "name": "Papperspåse",
+    "category": "Pappersförpackning",
+    "icon": "🟦",
+    "note": "Pappersförpackning."
+  },
+  {
+    "name": "Papperspåse förpackning",
+    "category": "Pappersförpackning",
+    "icon": "🟦",
+    "note": "Pappersförpackning."
+  },
+  {
+    "name": "Papperspåse emballage",
+    "category": "Pappersförpackning",
+    "icon": "🟦",
+    "note": "Pappersförpackning."
+  },
+  {
+    "name": "Tidning",
+    "category": "Tidningar",
+    "icon": "📰",
+    "note": "Tidningar/returpapper."
+  },
+  {
+    "name": "Reklam",
+    "category": "Tidningar",
+    "icon": "📰",
+    "note": "Tidningar/returpapper."
+  },
+  {
+    "name": "Katalog",
+    "category": "Tidningar",
+    "icon": "📰",
+    "note": "Tidningar/returpapper."
+  },
+  {
+    "name": "Broschyr",
+    "category": "Tidningar",
+    "icon": "📰",
+    "note": "Tidningar/returpapper."
+  },
+  {
+    "name": "Skrivpapper",
+    "category": "Tidningar",
+    "icon": "📰",
+    "note": "Tidningar/returpapper."
+  },
+  {
+    "name": "Ritpapper",
+    "category": "Tidningar",
+    "icon": "📰",
+    "note": "Tidningar/returpapper."
+  },
+  {
+    "name": "Aluminiumfolie",
+    "category": "Metallförpackning",
+    "icon": "🟥",
+    "note": "Metallförpackning."
+  },
+  {
+    "name": "Aluminiumform",
+    "category": "Metallförpackning",
+    "icon": "🟥",
+    "note": "Metallförpackning. Skrapa bort matrester."
+  },
+  {
+    "name": "Konservburk",
+    "category": "Metallförpackning",
+    "icon": "🟥",
+    "note": "Metallförpackning."
+  },
+  {
+    "name": "Kapsyl",
+    "category": "Metallförpackning",
+    "icon": "🟥",
+    "note": "Metallförpackning om den är en förpackningsdel."
+  },
+  {
+    "name": "Metallock",
+    "category": "Metallförpackning",
+    "icon": "🟥",
+    "note": "Metallförpackning."
+  },
+  {
+    "name": "Värmeljuskopp",
+    "category": "Metallförpackning",
+    "icon": "🟥",
+    "note": "Metallförpackning när den är tömd på stearin."
+  },
+  {
+    "name": "Glasburk",
+    "category": "Glasförpackning",
+    "icon": "🟩",
+    "note": "Sortera efter färg: färgat eller ofärgat glas."
+  },
+  {
+    "name": "Glasflaska",
+    "category": "Glasförpackning",
+    "icon": "🟩",
+    "note": "Sortera efter färg."
+  },
+  {
+    "name": "Syltburk",
+    "category": "Glasförpackning",
+    "icon": "🟩",
+    "note": "Glasförpackning."
+  },
+  {
+    "name": "Såsburk i glas",
+    "category": "Glasförpackning",
+    "icon": "🟩",
+    "note": "Glasförpackning."
+  },
+  {
+    "name": "Parfymflaska i glas",
+    "category": "Glasförpackning",
+    "icon": "🟩",
+    "note": "Glasförpackning om den är en glasförpackning."
+  },
+  {
+    "name": "Batteri",
+    "category": "Elektronik",
+    "icon": "🔌",
+    "note": "Lägg i elektronikboxen."
+  },
+  {
+    "name": "Laddare",
+    "category": "Elektronik",
+    "icon": "🔌",
+    "note": "Lägg i elektronikboxen."
+  },
+  {
+    "name": "Fjärrkontroll",
+    "category": "Elektronik",
+    "icon": "🔌",
+    "note": "Lägg i elektronikboxen."
+  },
+  {
+    "name": "Glödlampa",
+    "category": "Elektronik",
+    "icon": "🔌",
+    "note": "Lägg i elektronikboxen."
+  },
+  {
+    "name": "LED-lampa",
+    "category": "Elektronik",
+    "icon": "🔌",
+    "note": "Lägg i elektronikboxen."
+  },
+  {
+    "name": "Lysrör",
+    "category": "Elektronik",
+    "icon": "🔌",
+    "note": "Elektronik/elavfall – hantera enligt kommunens anvisningar."
+  },
+  {
+    "name": "Hörlurar",
+    "category": "Elektronik",
+    "icon": "🔌",
+    "note": "Småelektronik."
+  },
+  {
+    "name": "USB-kabel",
+    "category": "Elektronik",
+    "icon": "🔌",
+    "note": "Småelektronik."
+  },
+  {
+    "name": "Mobiltelefon",
+    "category": "Elektronik",
+    "icon": "🔌",
+    "note": "Småelektronik."
+  },
+  {
+    "name": "Mediciner",
+    "category": "Apotek",
+    "icon": "💊",
+    "note": "Lämnas till apotek."
+  },
+  {
+    "name": "Nagellack",
+    "category": "Farligt avfall",
+    "icon": "☣️",
+    "note": "Lämnas som farligt avfall på Norraby."
+  },
+  {
+    "name": "Hårfärg",
+    "category": "Farligt avfall",
+    "icon": "☣️",
+    "note": "Lämnas som farligt avfall."
+  },
+  {
+    "name": "Färg",
+    "category": "Farligt avfall",
+    "icon": "☣️",
+    "note": "Lämnas som farligt avfall."
+  },
+  {
+    "name": "Lack",
+    "category": "Farligt avfall",
+    "icon": "☣️",
+    "note": "Lämnas som farligt avfall."
+  },
+  {
+    "name": "Lösningsmedel",
+    "category": "Farligt avfall",
+    "icon": "☣️",
+    "note": "Lämnas som farligt avfall."
+  },
+  {
+    "name": "Motorolja",
+    "category": "Farligt avfall",
+    "icon": "☣️",
+    "note": "Lämnas som farligt avfall."
+  },
+  {
+    "name": "Sprayburk med innehåll",
+    "category": "Farligt avfall",
+    "icon": "☣️",
+    "note": "Lämnas som farligt avfall."
+  },
+  {
+    "name": "Pantflaska",
+    "category": "Pant",
+    "icon": "💰",
+    "note": "Pantautomat/butik."
+  },
+  {
+    "name": "Pantburk",
+    "category": "Pant",
+    "icon": "💰",
+    "note": "Pantautomat/butik."
+  },
+  {
+    "name": "Kläder",
+    "category": "Textil/återbruk",
+    "icon": "👕",
+    "note": "Återbruk/textilinsamling enligt aktuell kommunal lösning."
+  },
+  {
+    "name": "Handduk",
+    "category": "Textil/återbruk",
+    "icon": "👕",
+    "note": "Textil/återbruk enligt aktuell insamling."
+  },
+  {
+    "name": "Lakan",
+    "category": "Textil/återbruk",
+    "icon": "👕",
+    "note": "Textil/återbruk enligt aktuell insamling."
+  },
+  {
+    "name": "Skor",
+    "category": "Textil/återbruk",
+    "icon": "👕",
+    "note": "Textil/återbruk enligt aktuell insamling."
+  },
+  {
+    "name": "Metallskrot",
+    "category": "Norraby ÅVC",
+    "icon": "♻️",
+    "note": "Lämnas på Norraby ÅVC."
+  },
+  {
+    "name": "Trä",
+    "category": "Norraby ÅVC",
+    "icon": "♻️",
+    "note": "Lämnas på Norraby ÅVC."
+  },
+  {
+    "name": "Jord",
+    "category": "Norraby ÅVC",
+    "icon": "♻️",
+    "note": "Lämnas på Norraby ÅVC enligt ÅVC:s fraktioner."
+  },
+  {
+    "name": "Gräs",
+    "category": "Norraby ÅVC",
+    "icon": "♻️",
+    "note": "Trädgårdsavfall till Norraby."
+  },
+  {
+    "name": "Löv",
+    "category": "Norraby ÅVC",
+    "icon": "♻️",
+    "note": "Trädgårdsavfall till Norraby."
+  },
+  {
+    "name": "Grenar",
+    "category": "Norraby ÅVC",
+    "icon": "♻️",
+    "note": "Trädgårdsavfall till Norraby."
+  },
+  {
+    "name": "Stort plastföremål",
+    "category": "Norraby ÅVC",
+    "icon": "♻️",
+    "note": "Inte plastförpackning. Lämnas på Norraby enligt fraktion."
+  },
+  {
+    "name": "Trasigt verktyg",
+    "category": "Norraby ÅVC",
+    "icon": "♻️",
+    "note": "Lämnas på Norraby enligt aktuell fraktion."
+  },
+  {
+    "name": "Matfett",
+    "category": "Norraby ÅVC",
+    "icon": "🛢️",
+    "note": "Samla i ren PET-flaska med Miljötratten och lämna flaskan på Norraby."
+  },
+  {
+    "name": "Frityrolja",
+    "category": "Norraby ÅVC",
+    "icon": "🛢️",
+    "note": "Samla i ren PET-flaska med Miljötratten och lämna på Norraby."
+  },
+  {
+    "name": "Smör från stekning",
+    "category": "Norraby ÅVC",
+    "icon": "🛢️",
+    "note": "Samla upp med Miljötratten; häll inte i avloppet."
+  },
+  {
+    "name": "Tonfiskolja",
+    "category": "Norraby ÅVC",
+    "icon": "🛢️",
+    "note": "Samla med Miljötratten och lämna på Norraby."
+  },
+  {
+    "name": "Olja från soltorkade tomater",
+    "category": "Norraby ÅVC",
+    "icon": "🛢️",
+    "note": "Samla med Miljötratten och lämna på Norraby."
+  }
+]

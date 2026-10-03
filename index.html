@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="sv">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#1d6b45">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="apple-mobile-web-app-title" content="Tranås Sortering">
+<link rel="manifest" href="manifest.json">
+<title>Tranås Sortering 3.0</title>
+<style>
+:root{--green:#1d6b45;--bg:#f5f6f4;--card:#fff;--text:#18201c;--muted:#66706b}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);font-family:-apple-system,BlinkMacSystemFont,"SF Pro Text",Arial,sans-serif;color:var(--text)}
+header{background:var(--green);color:white;padding:calc(env(safe-area-inset-top) + 18px) 18px 18px;position:sticky;top:0;z-index:5}
+h1{font-size:25px;margin:0 0 12px}.sub{opacity:.9;font-size:13px}
+.search{width:100%;border:0;border-radius:14px;padding:14px 15px;font-size:17px;outline:none}
+main{max-width:720px;margin:auto;padding:14px 14px 90px}
+.tabs{display:flex;gap:8px;overflow:auto;padding:2px 0 12px}.tab{border:0;border-radius:999px;padding:9px 13px;background:#e5e9e5;color:#25312a;white-space:nowrap}.tab.active{background:var(--green);color:white}
+.card{background:var(--card);border-radius:17px;padding:15px;margin:9px 0;box-shadow:0 1px 4px #0000000d;display:flex;gap:13px;align-items:flex-start}
+.icon{font-size:27px}.name{font-weight:700;font-size:17px}.cat{font-size:13px;color:var(--green);font-weight:650;margin-top:3px}.note{font-size:14px;color:var(--muted);margin-top:6px;line-height:1.35}
+.star{margin-left:auto;border:0;background:none;font-size:22px}.section{font-size:20px;font-weight:800;margin:20px 3px 8px}
+.info{background:#fff;border-radius:17px;padding:16px;margin:10px 0;line-height:1.45}.info h2{margin:0 0 8px;font-size:18px}
+a{color:var(--green);font-weight:700}.empty{text-align:center;color:var(--muted);padding:35px 15px}
+footer{position:fixed;bottom:0;left:0;right:0;background:#ffffffed;backdrop-filter:blur(12px);border-top:1px solid #ddd;padding:10px 14px calc(10px + env(safe-area-inset-bottom));text-align:center;font-size:12px;color:var(--muted)}
+</style>
+</head>
+<body>
+<header><h1>♻️ Tranås Sortering</h1><div class="sub">3.0 · fungerar även offline</div><input id="q" class="search" placeholder="Vad ska jag sortera?"></header>
+<main>
+<div class="tabs" id="tabs"></div>
+<div id="content"></div>
+</main>
+<footer>Tranås Sortering 3.0 · Officiell guide: <a href="https://tranas.se/bo-miljo-och-trafik/avfall-och-atervinning/sorteringsguiden/" target="_blank">Tranås kommun</a></footer>
+<script>
+let all=[], fav=new Set(JSON.parse(localStorage.getItem('fav3')||'[]')), recent=JSON.parse(localStorage.getItem('recent3')||'[]');
+const cats=[["Alla","♻️"],["Matavfall","🟫"],["Restavfall","⚫"],["Plastförpackning","🟨"],["Pappersförpackning","🟦"],["Metallförpackning","🟥"],["Glasförpackning","🟩"],["Tidningar","📰"],["Elektronik","🔌"],["Farligt avfall","☣️"],["Norraby ÅVC","♻️"],["Textil/återbruk","👕"],["Pant","💰"],["Apotek","💊"]];
+let active="Alla";
+async function init(){all=await fetch('data.json').then(r=>r.json()); renderTabs(); render();}
+function renderTabs(){tabs.innerHTML=cats.map(c=>`<button class="tab ${c[0]===active?'active':''}" onclick="active='${c[0]}';renderTabs();render()">${c[1]} ${c[0]}</button>`).join('')}
+function toggleFav(i){let k=all[i].name;fav.has(k)?fav.delete(k):fav.add(k);localStorage.setItem('fav3',JSON.stringify([...fav]));render();}
+function render(){
+ let q=document.getElementById('q').value.trim().toLowerCase();
+ let arr=all.map((x,i)=>({...x,i})).filter(x=>(active==="Alla"||x.category===active)&&(!q||(x.name+" "+x.category+" "+x.note).toLowerCase().includes(q)));
+ if(q){recent=[q,...recent.filter(x=>x!==q)].slice(0,8);localStorage.setItem('recent3',JSON.stringify(recent))}
+ content.innerHTML="";
+ if(!q && active==="Alla"){content.innerHTML=`<div class="info"><h2>Snabbsök</h2><div>Skriv till exempel <b>Latz</b>, <b>chips</b>, <b>kaffefilter</b>, <b>aluminiumfolie</b> eller <b>batteri</b>.</div></div><div class="section">Norraby ÅVC</div><div class="info"><h2>♻️ Norraby</h2><div>Tar bland annat emot grovavfall, trädgårdsavfall, elavfall och farligt avfall.</div><p><b>Ordinarie öppettider:</b><br>Mån 08–19 · Tis 07–16 · Ons 07–16 · Tor 08–19 · Fre 07–16 · Lör 08–15 · Sön stängt</p><p><b>Återbrukshuset:</b><br>Mån 12–17 · Ons 12–15 · Tor 12–17 · Lör 10–14</p></div><div class="info"><h2>🛢️ Miljötratten</h2><div>Samla matfett och matolja i en ren PET-flaska med Miljötratten. Häll inte fett i avloppet. Lämna flaskan på Norraby.</div></div><div class="info"><h2>📌 Viktigt</h2><div>En plastpryl är inte automatiskt en plastförpackning. Det är <b>förpackningar</b> som ska till förpackningsfraktionerna. För sammansatta förpackningar: sortera efter materialet som förpackningen huvudsakligen består av.</div></div>`;return}
+ if(!arr.length){content.innerHTML='<div class="empty">Hittade inget. Prova ett kortare sökord eller öppna den officiella sorteringsguiden.</div>';return}
+ content.innerHTML=arr.map(x=>`<div class="card"><div class="icon">${x.icon}</div><div style="flex:1"><div class="name">${esc(x.name)}</div><div class="cat">${esc(x.category)}</div><div class="note">${esc(x.note)}</div></div><button class="star" onclick="toggleFav(${x.i})">${fav.has(x.name)?'⭐':'☆'}</button></div>`).join('');
+}
+function esc(s){return s.replace(/[&<>"']/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[m]))}
+q.addEventListener('input',render); init();
+if('serviceWorker' in navigator) navigator.serviceWorker.register('sw.js');
+</script>
+</body></html>
