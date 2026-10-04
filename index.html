@@ -1,55 +1,23 @@
-<!doctype html>
-<html lang="sv">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<meta name="theme-color" content="#1d6b45">
-<meta name="apple-mobile-web-app-capable" content="yes">
-<meta name="apple-mobile-web-app-status-bar-style" content="default">
-<meta name="apple-mobile-web-app-title" content="Tranås Sortering">
-<link rel="manifest" href="manifest.json">
-<title>Tranås Sortering 3.0</title>
-<style>
-:root{--green:#1d6b45;--bg:#f5f6f4;--card:#fff;--text:#18201c;--muted:#66706b}
-*{box-sizing:border-box}body{margin:0;background:var(--bg);font-family:-apple-system,BlinkMacSystemFont,"SF Pro Text",Arial,sans-serif;color:var(--text)}
-header{background:var(--green);color:white;padding:calc(env(safe-area-inset-top) + 18px) 18px 18px;position:sticky;top:0;z-index:5}
-h1{font-size:25px;margin:0 0 12px}.sub{opacity:.9;font-size:13px}
-.search{width:100%;border:0;border-radius:14px;padding:14px 15px;font-size:17px;outline:none}
-main{max-width:720px;margin:auto;padding:14px 14px 90px}
-.tabs{display:flex;gap:8px;overflow:auto;padding:2px 0 12px}.tab{border:0;border-radius:999px;padding:9px 13px;background:#e5e9e5;color:#25312a;white-space:nowrap}.tab.active{background:var(--green);color:white}
-.card{background:var(--card);border-radius:17px;padding:15px;margin:9px 0;box-shadow:0 1px 4px #0000000d;display:flex;gap:13px;align-items:flex-start}
-.icon{font-size:27px}.name{font-weight:700;font-size:17px}.cat{font-size:13px;color:var(--green);font-weight:650;margin-top:3px}.note{font-size:14px;color:var(--muted);margin-top:6px;line-height:1.35}
-.star{margin-left:auto;border:0;background:none;font-size:22px}.section{font-size:20px;font-weight:800;margin:20px 3px 8px}
-.info{background:#fff;border-radius:17px;padding:16px;margin:10px 0;line-height:1.45}.info h2{margin:0 0 8px;font-size:18px}
-a{color:var(--green);font-weight:700}.empty{text-align:center;color:var(--muted);padding:35px 15px}
-footer{position:fixed;bottom:0;left:0;right:0;background:#ffffffed;backdrop-filter:blur(12px);border-top:1px solid #ddd;padding:10px 14px calc(10px + env(safe-area-inset-bottom));text-align:center;font-size:12px;color:var(--muted)}
-</style>
-</head>
-<body>
-<header><h1>♻️ Tranås Sortering</h1><div class="sub">3.0 · fungerar även offline</div><input id="q" class="search" placeholder="Vad ska jag sortera?"></header>
-<main>
-<div class="tabs" id="tabs"></div>
-<div id="content"></div>
-</main>
-<footer>Tranås Sortering 3.0 · Officiell guide: <a href="https://tranas.se/bo-miljo-och-trafik/avfall-och-atervinning/sorteringsguiden/" target="_blank">Tranås kommun</a></footer>
-<script>
-let all=[], fav=new Set(JSON.parse(localStorage.getItem('fav3')||'[]')), recent=JSON.parse(localStorage.getItem('recent3')||'[]');
-const cats=[["Alla","♻️"],["Matavfall","🟫"],["Restavfall","⚫"],["Plastförpackning","🟨"],["Pappersförpackning","🟦"],["Metallförpackning","🟥"],["Glasförpackning","🟩"],["Tidningar","📰"],["Elektronik","🔌"],["Farligt avfall","☣️"],["Norraby ÅVC","♻️"],["Textil/återbruk","👕"],["Pant","💰"],["Apotek","💊"]];
-let active="Alla";
-async function init(){all=await fetch('data.json').then(r=>r.json()); renderTabs(); render();}
+<!doctype html><html lang="sv"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="theme-color" content="#1d6b45"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="default"><meta name="apple-mobile-web-app-title" content="Tranås Sortering"><link rel="manifest" href="manifest.json"><title>Tranås Sortering 4.0</title><style>
+:root{--green:#1d6b45;--bg:#f5f6f4;--card:#fff;--text:#18201c;--muted:#66706b;--warn:#8a5b00}*{box-sizing:border-box}body{margin:0;background:var(--bg);font-family:-apple-system,BlinkMacSystemFont,"SF Pro Text",Arial,sans-serif;color:var(--text)}header{background:var(--green);color:white;padding:calc(env(safe-area-inset-top) + 16px) 16px 16px;position:sticky;top:0;z-index:5}h1{font-size:24px;margin:0 0 4px}.sub{opacity:.9;font-size:13px;margin-bottom:11px}.search{width:100%;border:0;border-radius:14px;padding:14px 15px;font-size:17px;outline:none}.hint{font-size:12px;opacity:.9;margin-top:8px}.tabs{display:flex;gap:7px;overflow:auto;padding:3px 0 11px}.tab{border:0;border-radius:999px;padding:9px 12px;background:#e5e9e5;color:#25312a;white-space:nowrap}.tab.active{background:var(--green);color:white}main{max-width:760px;margin:auto;padding:13px 13px 90px}.card{background:var(--card);border-radius:17px;padding:14px;margin:9px 0;box-shadow:0 1px 4px #0000000d;display:flex;gap:12px;align-items:flex-start}.icon{font-size:27px}.name{font-weight:750;font-size:17px}.cat{font-size:13px;color:var(--green);font-weight:700;margin-top:3px}.note{font-size:14px;color:var(--muted);margin-top:6px;line-height:1.38}.star{margin-left:auto;border:0;background:none;font-size:22px}.score{font-size:11px;color:#8a938e;margin-top:5px}.section{font-size:19px;font-weight:800;margin:17px 3px 8px}.info{background:#fff;border-radius:17px;padding:16px;margin:9px 0;line-height:1.45}.info h2{margin:0 0 8px;font-size:18px}.amb{border-left:4px solid #c88a16}.empty{text-align:center;color:var(--muted);padding:35px 15px}.chips{display:flex;gap:7px;flex-wrap:wrap}.chip{border:0;border-radius:999px;padding:8px 10px;background:#e8ece8}.top{display:flex;justify-content:space-between;align-items:center}.clear{border:0;background:none;color:white;font-size:14px}a{color:var(--green);font-weight:700}footer{position:fixed;bottom:0;left:0;right:0;background:#ffffffed;backdrop-filter:blur(12px);border-top:1px solid #ddd;padding:9px 13px calc(9px + env(safe-area-inset-bottom));text-align:center;font-size:12px;color:var(--muted)}
+</style></head><body><header><div class="top"><div><h1>♻️ Tranås Sortering</h1><div class="sub">4.0 · smart sökning · 500+ saker · fungerar offline</div></div><div><button class="clear" onclick="startCamera()">📷 Kamera</button> <button class="clear" onclick="clearSearch()">Rensa</button></div></div><input id="q" class="search" autocomplete="off" placeholder="Skriv t.ex. Latz, folie, kartong eller kattbajs"><div class="hint">Söker även på vardagsord, synonymer och vanliga stavfel.</div></header><div id="cam" style="display:none;position:fixed;inset:0;background:#000;z-index:20;padding:env(safe-area-inset-top) 12px 20px"><div style="display:flex;justify-content:space-between;align-items:center;color:#fff;padding:10px 0"><b>📷 Läs av förpackning</b><button class="clear" onclick="stopCamera()">Stäng</button></div><video id="video" autoplay playsinline style="width:100%;max-height:62vh;object-fit:cover;border-radius:16px;background:#111"></video><canvas id="canvas" style="display:none"></canvas><button id="snap" onclick="captureAndRead()" style="width:100%;margin-top:14px;border:0;border-radius:15px;padding:15px;font-size:17px;font-weight:700">📸 Ta bild och sök</button><div id="camStatus" style="color:#fff;text-align:center;margin-top:12px;font-size:14px"></div><div style="color:#ccc;text-align:center;font-size:12px;margin-top:10px">Tips: håll etiketten nära, rak och väl belyst.</div></div><main><div class="tabs" id="tabs"></div><div id="content"></div></main><footer>Tranås Sortering 4.0 · <a href="https://tranas.se/bo-miljo-och-trafik/avfall-och-atervinning/sorteringsguiden/" target="_blank">Officiell sorteringsguide</a></footer><script src="https://cdn.jsdelivr.net/npm/tesseract.js@5/dist/tesseract.min.js"></script><script>
+let stream=null;
+let all=[],fav=new Set(JSON.parse(localStorage.getItem('fav4')||'[]')),recent=JSON.parse(localStorage.getItem('recent4')||'[]');let active='Alla';
+const cats=[['Alla','♻️'],['Matavfall','🟫'],['Restavfall','⚫'],['Plastförpackning','🟨'],['Pappersförpackning','🟦'],['Metallförpackning','🟥'],['Glasförpackning','🟩'],['Tidningar','📰'],['Elektronik','🔌'],['Farligt avfall','☣️'],['Pant','💰'],['Textil/återbruk','👕'],['Norraby ÅVC','♻️'],['Apotek','💊'],['Beror på','❓']];
+function norm(s){return s.toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g,'').replace(/[^a-z0-9åäö ]/gi,' ').replace(/\s+/g,' ').trim()}
+function lev(a,b){let d=Array.from({length:b.length+1},(_,i)=>i);for(let i=1;i<=a.length;i++){let nd=[i];for(let j=1;j<=b.length;j++)nd[j]=Math.min(nd[j-1]+1,d[j]+1,d[j-1]+(a[i-1]===b[j-1]?0:1));d=nd}return d[b.length]}
+function score(x,q){let nq=norm(q), best=999;for(const v of [x.name,x.category,...(x.aliases||[])]){let nv=norm(v);if(!nv)continue;if(nv===nq)return 1000;if(nv.startsWith(nq))best=Math.min(best,100);if(nv.includes(nq))best=Math.min(best,80);for(const t of nv.split(' ')){if(t.startsWith(nq))best=Math.min(best,70);if(nq.length>=4&&lev(nq,t)<=1)best=Math.min(best,60)}}return best===999?0:best}
+async function init(){all=await fetch('data.json').then(r=>r.json());renderTabs();render()}
 function renderTabs(){tabs.innerHTML=cats.map(c=>`<button class="tab ${c[0]===active?'active':''}" onclick="active='${c[0]}';renderTabs();render()">${c[1]} ${c[0]}</button>`).join('')}
-function toggleFav(i){let k=all[i].name;fav.has(k)?fav.delete(k):fav.add(k);localStorage.setItem('fav3',JSON.stringify([...fav]));render();}
-function render(){
- let q=document.getElementById('q').value.trim().toLowerCase();
- let arr=all.map((x,i)=>({...x,i})).filter(x=>(active==="Alla"||x.category===active)&&(!q||(x.name+" "+x.category+" "+x.note).toLowerCase().includes(q)));
- if(q){recent=[q,...recent.filter(x=>x!==q)].slice(0,8);localStorage.setItem('recent3',JSON.stringify(recent))}
- content.innerHTML="";
- if(!q && active==="Alla"){content.innerHTML=`<div class="info"><h2>Snabbsök</h2><div>Skriv till exempel <b>Latz</b>, <b>chips</b>, <b>kaffefilter</b>, <b>aluminiumfolie</b> eller <b>batteri</b>.</div></div><div class="section">Norraby ÅVC</div><div class="info"><h2>♻️ Norraby</h2><div>Tar bland annat emot grovavfall, trädgårdsavfall, elavfall och farligt avfall.</div><p><b>Ordinarie öppettider:</b><br>Mån 08–19 · Tis 07–16 · Ons 07–16 · Tor 08–19 · Fre 07–16 · Lör 08–15 · Sön stängt</p><p><b>Återbrukshuset:</b><br>Mån 12–17 · Ons 12–15 · Tor 12–17 · Lör 10–14</p></div><div class="info"><h2>🛢️ Miljötratten</h2><div>Samla matfett och matolja i en ren PET-flaska med Miljötratten. Häll inte fett i avloppet. Lämna flaskan på Norraby.</div></div><div class="info"><h2>📌 Viktigt</h2><div>En plastpryl är inte automatiskt en plastförpackning. Det är <b>förpackningar</b> som ska till förpackningsfraktionerna. För sammansatta förpackningar: sortera efter materialet som förpackningen huvudsakligen består av.</div></div>`;return}
- if(!arr.length){content.innerHTML='<div class="empty">Hittade inget. Prova ett kortare sökord eller öppna den officiella sorteringsguiden.</div>';return}
- content.innerHTML=arr.map(x=>`<div class="card"><div class="icon">${x.icon}</div><div style="flex:1"><div class="name">${esc(x.name)}</div><div class="cat">${esc(x.category)}</div><div class="note">${esc(x.note)}</div></div><button class="star" onclick="toggleFav(${x.i})">${fav.has(x.name)?'⭐':'☆'}</button></div>`).join('');
-}
-function esc(s){return s.replace(/[&<>"']/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[m]))}
-q.addEventListener('input',render); init();
-if('serviceWorker' in navigator) navigator.serviceWorker.register('sw.js');
-</script>
-</body></html>
+function toggleFav(i){let k=all[i].name;fav.has(k)?fav.delete(k):fav.add(k);localStorage.setItem('fav4',JSON.stringify([...fav]));render()}
+function clearSearch(){q.value='';render()}
+async function startCamera(){try{cam.style.display='block';camStatus.textContent='Startar kamera…';stream=await navigator.mediaDevices.getUserMedia({video:{facingMode:{ideal:'environment'},width:{ideal:1280},height:{ideal:720}},audio:false});video.srcObject=stream;camStatus.textContent='Rikta kameran mot texten på förpackningen.'}catch(e){camStatus.textContent='Kameran kunde inte startas. Kontrollera kameratillståndet i Safari.'}}
+function stopCamera(){if(stream){stream.getTracks().forEach(t=>t.stop());stream=null}video.srcObject=null;cam.style.display='none';camStatus.textContent=''}
+async function captureAndRead(){if(!stream)return;const w=video.videoWidth,h=video.videoHeight;if(!w||!h){camStatus.textContent='Kameran är inte redo ännu.';return}canvas.width=w;canvas.height=h;const ctx=canvas.getContext('2d');ctx.drawImage(video,0,0,w,h);camStatus.textContent='Läser texten…';snap.disabled=true;try{const {data:{text}}=await Tesseract.recognize(canvas,'swe+eng',{logger:m=>{if(m.status==='recognizing text'&&m.progress)camStatus.textContent='Läser text… '+Math.round(m.progress*100)+'%'}});const clean=text.replace(/\s+/g,' ').trim();stopCamera();q.value=clean.slice(0,120);render();if(!clean)camStatus.textContent='';}catch(e){camStatus.textContent='Kunde inte läsa texten. Prova igen med bättre ljus.'}finally{snap.disabled=false}}
+function render(){let query=q.value.trim();let nq=norm(query);let arr=all.map((x,i)=>({...x,i,s:query?score(x,query):1})).filter(x=>(active==='Alla'||x.category===active)&&(!query||x.s>0)).sort((a,b)=>b.s-a.s||a.name.localeCompare(b.name,'sv'));content.innerHTML='';
+ if(!query&&active==='Alla'){content.innerHTML=`<div class="info"><h2>Snabbsök</h2><div>Testa <b>Latz</b>, <b>kattmat</b>, <b>folie</b>, <b>kartong</b>, <b>kvitto</b>, <b>batteri</b> eller <b>julklappspapper</b>.</div></div>${recent.length?`<div class="section">Senaste sökningar</div><div class="info chips">${recent.map(r=>`<button class="chip" onclick="q.value='${esc(r)}';render()">${esc(r)}</button>`).join('')}</div>`:''}<div class="info"><h2>📌 Viktig grundregel</h2><div>Det är bara <b>förpackningar</b> som ska till förpackningsfraktionerna. För en förpackning som består av flera material: sortera efter materialet den är mest av.</div></div><div class="info"><h2>♻️ Norraby ÅVC</h2><div>Tar bland annat emot grovavfall, trädgårdsavfall, elavfall och farligt avfall.</div><p><b>Ordinarie:</b> Mån 08–19 · Tis 07–16 · Ons 07–16 · Tor 08–19 · Fre 07–16 · Lör 08–15 · Sön stängt</p></div><div class="info"><h2>🛢️ Miljötratten</h2><div>Samla flytande matfett/matolja i ren PET-flaska med Miljötratten och lämna enligt kommunens anvisning.</div></div>`;return}
+ if(query){recent=[query,...recent.filter(x=>x.toLowerCase()!==query.toLowerCase())].slice(0,8);localStorage.setItem('recent4',JSON.stringify(recent))}
+ if(!arr.length){content.innerHTML='<div class="empty"><b>Hittade inget.</b><br>Prova ett kortare ord, synonym eller vardagsnamn.</div>';return}
+ const top=arr.slice(0,40);content.innerHTML=top.map(x=>`<div class="card ${x.category==='Beror på'?'amb':''}"><div class="icon">${x.icon}</div><div style="flex:1"><div class="name">${esc(x.name)}</div><div class="cat">${esc(x.category)}</div><div class="note">${esc(x.note)}</div>${x.category==='Beror på'&&x.alternatives?'<div class="note"><b>Här behöver du kontrollera materialet.</b></div>':''}</div><button class="star" onclick="toggleFav(${x.i})">${fav.has(x.name)?'⭐':'☆'}</button></div>`).join('')+(arr.length>40?`<div class="empty">Visar de 40 bästa träffarna av ${arr.length}.</div>`:'')}
+function esc(s){return String(s).replace(/[&<>"']/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[m]))}q.addEventListener('input',render);init();if('serviceWorker'in navigator)navigator.serviceWorker.register('sw.js');
+</script></body></html>

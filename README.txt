@@ -1,24 +1,7 @@
-TRANÅS SORTERING 3.0
-
-Detta är en PWA/webbapp som kan läggas på iPhone-hemskärmen utan Mac.
-
-VIKTIGT:
-För att Safari ska få installera en PWA behöver filerna ligga på en HTTPS-webbserver.
-När sidan öppnas i Safari:
-1. Tryck Dela.
-2. Välj "Lägg till på hemskärmen".
-3. Starta appen från ikonen.
-4. Efter första laddningen fungerar databasen offline.
-
-Källor:
-Tranås kommun – Sorteringsguiden:
-https://tranas.se/bo-miljo-och-trafik/avfall-och-atervinning/sorteringsguiden/
-
-Nytt insamlingssystem:
-https://tranas.se/bo-miljo-och-trafik/avfall-och-atervinning/nytt-insamlingssystem-2026/
-
-Norraby ÅVC:
-https://tranas.se/bo-miljo-och-trafik/avfall-och-atervinning/norraby-atervinningscentral/
-
-Miljötratten:
-https://tranas.se/bo-miljo-och-trafik/avfall-och-atervinning/hushallsavfall/miljotratten/
+Tranås Sortering 4.1
+- 574+ sökbara poster
+- smart sökning, synonymer och stavfel
+- favoriter och senaste sökningar
+- kamera med OCR för att läsa text på förpackningar
+- fungerar offline för appens eget innehåll; OCR-biblioteket laddas från CDN första gången
+- GitHub Pages: lägg alla filer i repo-roten och ersätt befintliga filer
