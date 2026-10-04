@@ -1,4 +1,4 @@
-Tranås Sortering 4.1.5
+Tranås Sortering 4.1.6
 - 600+ sökbara poster
 - smart sökning med vardagsord, synonymer och stavfel
 - kamera + OCR med markerbart textområde
