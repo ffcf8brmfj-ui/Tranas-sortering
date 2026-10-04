@@ -6608,5 +6608,467 @@
       "spray",
       "sprayburk"
     ]
+  },
+  {
+    "name": "Milda Mat & Bak margarin",
+    "category": "Matavfall",
+    "icon": "🟫",
+    "note": "Margarinet sorteras som matavfall. Större mängder matfett kan samlas med miljötratten.",
+    "aliases": "milda mat bak,milda mat och bak,milda margarin,milda mat,bakmargarin"
+  },
+  {
+    "name": "Milda margarin",
+    "category": "Matavfall",
+    "icon": "🟫",
+    "note": "Margarin sorteras som matavfall.",
+    "aliases": "milda,milda margarin,margarin"
+  },
+  {
+    "name": "Margarin",
+    "category": "Matavfall",
+    "icon": "🟫",
+    "note": "Margarin sorteras som matavfall. Större mängder matfett kan samlas med miljötratten.",
+    "aliases": "margarin,margarine,bakmargarin,matmargarin"
+  },
+  {
+    "name": "Smör",
+    "category": "Matavfall",
+    "icon": "🟫",
+    "note": "Smör sorteras som matavfall. Större mängder matfett kan samlas med miljötratten.",
+    "aliases": "smör,smor,smörpaket innehåll"
+  },
+  {
+    "name": "Kokosfett",
+    "category": "Matavfall",
+    "icon": "🟫",
+    "note": "Kokosfett sorteras som matavfall. Större mängder matfett kan samlas med miljötratten.",
+    "aliases": "kokosfett,kokosolja"
+  },
+  {
+    "name": "Ost",
+    "category": "Matavfall",
+    "icon": "🟫",
+    "note": "Ost och mejeriprodukter sorteras som matavfall.",
+    "aliases": "ost,ostbit,ostskiva"
+  },
+  {
+    "name": "Mejeriprodukter",
+    "category": "Matavfall",
+    "icon": "🟫",
+    "note": "Mejeriprodukter sorteras som matavfall.",
+    "aliases": "mejeri,mjölk,grädde,fil,yoghurt"
+  },
+  {
+    "name": "Cellofan",
+    "category": "Plastförpackning",
+    "icon": "🟨",
+    "note": "Plastförpackning. Hård- och mjukplast sorteras tillsammans i Tranås.",
+    "aliases": "cellofan"
+  },
+  {
+    "name": "Chipsrör plastlock",
+    "category": "Plastförpackning",
+    "icon": "🟨",
+    "note": "Plastförpackning. Hård- och mjukplast sorteras tillsammans i Tranås.",
+    "aliases": "chipsrör lock,pringles lock"
+  },
+  {
+    "name": "Chokladask plastform",
+    "category": "Plastförpackning",
+    "icon": "🟨",
+    "note": "Plastförpackning. Hård- och mjukplast sorteras tillsammans i Tranås.",
+    "aliases": "chokladask plastform"
+  },
+  {
+    "name": "Deodorant roll-on plast",
+    "category": "Plastförpackning",
+    "icon": "🟨",
+    "note": "Plastförpackning. Hård- och mjukplast sorteras tillsammans i Tranås.",
+    "aliases": "deodorant plast,roll on"
+  },
+  {
+    "name": "Frigolitförpackning",
+    "category": "Plastförpackning",
+    "icon": "🟨",
+    "note": "Plastförpackning. Hård- och mjukplast sorteras tillsammans i Tranås.",
+    "aliases": "frigolit,frigolit emballage"
+  },
+  {
+    "name": "Klämpåse barnmat",
+    "category": "Plastförpackning",
+    "icon": "🟨",
+    "note": "Plastförpackning. Hård- och mjukplast sorteras tillsammans i Tranås.",
+    "aliases": "klämpåse,klämmis,barnmatspåse"
+  },
+  {
+    "name": "Medicinkarta",
+    "category": "Plastförpackning",
+    "icon": "🟨",
+    "note": "Plastförpackning. Hård- och mjukplast sorteras tillsammans i Tranås.",
+    "aliases": "medicinkarta,tablettkarta,blister"
+  },
+  {
+    "name": "Nätpåse frukt",
+    "category": "Plastförpackning",
+    "icon": "🟨",
+    "note": "Plastförpackning. Hård- och mjukplast sorteras tillsammans i Tranås.",
+    "aliases": "nätpåse,nätpåse frukt"
+  },
+  {
+    "name": "Påsclips",
+    "category": "Plastförpackning",
+    "icon": "🟨",
+    "note": "Plastförpackning. Hård- och mjukplast sorteras tillsammans i Tranås.",
+    "aliases": "påsklips,brödpåse clips,påsclip"
+  },
+  {
+    "name": "Plast runt flerpack",
+    "category": "Plastförpackning",
+    "icon": "🟨",
+    "note": "Plastförpackning. Hård- och mjukplast sorteras tillsammans i Tranås.",
+    "aliases": "plast runt flerpack,sexpack plast"
+  },
+  {
+    "name": "Plastburk",
+    "category": "Plastförpackning",
+    "icon": "🟨",
+    "note": "Plastförpackning. Hård- och mjukplast sorteras tillsammans i Tranås.",
+    "aliases": "plastburk,kvargburk,risifruttiburk"
+  },
+  {
+    "name": "Plastflaska ej pant",
+    "category": "Plastförpackning",
+    "icon": "🟨",
+    "note": "Plastförpackning. Hård- och mjukplast sorteras tillsammans i Tranås.",
+    "aliases": "plastflaska,plastflaska ej pant"
+  },
+  {
+    "name": "Plastflaska ketchup",
+    "category": "Plastförpackning",
+    "icon": "🟨",
+    "note": "Plastförpackning. Hård- och mjukplast sorteras tillsammans i Tranås.",
+    "aliases": "ketchupflaska plast,diskmedelsflaska plast"
+  },
+  {
+    "name": "Plastmugg engångs",
+    "category": "Plastförpackning",
+    "icon": "🟨",
+    "note": "Plastförpackning. Hård- och mjukplast sorteras tillsammans i Tranås.",
+    "aliases": "plastmugg,mugg plast"
+  },
+  {
+    "name": "Plastpåse med metallbeläggning",
+    "category": "Plastförpackning",
+    "icon": "🟨",
+    "note": "Plastförpackning. Hård- och mjukplast sorteras tillsammans i Tranås.",
+    "aliases": "metalliserad plastpåse,metalliserad påse"
+  },
+  {
+    "name": "Plasttallrik engångs",
+    "category": "Plastförpackning",
+    "icon": "🟨",
+    "note": "Plastförpackning. Hård- och mjukplast sorteras tillsammans i Tranås.",
+    "aliases": "plasttallrik,tallrik plast"
+  },
+  {
+    "name": "Plasttub",
+    "category": "Plastförpackning",
+    "icon": "🟨",
+    "note": "Plastförpackning. Hård- och mjukplast sorteras tillsammans i Tranås.",
+    "aliases": "plasttub,tub plast"
+  },
+  {
+    "name": "Refillpåse",
+    "category": "Plastförpackning",
+    "icon": "🟨",
+    "note": "Plastförpackning. Hård- och mjukplast sorteras tillsammans i Tranås.",
+    "aliases": "refillpåse,refillpåse sylt,refill tvättmedel"
+  },
+  {
+    "name": "Saftflaska plast",
+    "category": "Plastförpackning",
+    "icon": "🟨",
+    "note": "Plastförpackning. Hård- och mjukplast sorteras tillsammans i Tranås.",
+    "aliases": "saftflaska plast"
+  },
+  {
+    "name": "Skumplastförpackning",
+    "category": "Plastförpackning",
+    "icon": "🟨",
+    "note": "Plastförpackning. Hård- och mjukplast sorteras tillsammans i Tranås.",
+    "aliases": "skumplast,skumplastförpackning"
+  },
+  {
+    "name": "Smörask plastbägare",
+    "category": "Plastförpackning",
+    "icon": "🟨",
+    "note": "Plastförpackning. Hård- och mjukplast sorteras tillsammans i Tranås.",
+    "aliases": "smörask plast,plastbägare smör"
+  },
+  {
+    "name": "Sprayflaska tom plast",
+    "category": "Plastförpackning",
+    "icon": "🟨",
+    "note": "Plastförpackning. Hård- och mjukplast sorteras tillsammans i Tranås.",
+    "aliases": "tom sprayflaska plast"
+  },
+  {
+    "name": "Tvättmedelsflaska",
+    "category": "Plastförpackning",
+    "icon": "🟨",
+    "note": "Plastförpackning. Hård- och mjukplast sorteras tillsammans i Tranås.",
+    "aliases": "tvättmedelsflaska plast"
+  },
+  {
+    "name": "Vaccumförpackning",
+    "category": "Plastförpackning",
+    "icon": "🟨",
+    "note": "Plastförpackning. Hård- och mjukplast sorteras tillsammans i Tranås.",
+    "aliases": "vakuumförpackning,vaccumförpackning,ostförpackning,korvförpackning"
+  },
+  {
+    "name": "Vitaminrör",
+    "category": "Plastförpackning",
+    "icon": "🟨",
+    "note": "Plastförpackning. Hård- och mjukplast sorteras tillsammans i Tranås.",
+    "aliases": "vitaminrör,medicinrör plast"
+  },
+  {
+    "name": "Kaffepaket plast",
+    "category": "Plastförpackning",
+    "icon": "🟨",
+    "note": "Plastförpackning. Hård- och mjukplast sorteras tillsammans i Tranås.",
+    "aliases": "kaffepaket plast,kaffepåse plast"
+  },
+  {
+    "name": "Godispåse plast",
+    "category": "Plastförpackning",
+    "icon": "🟨",
+    "note": "Plastförpackning. Hård- och mjukplast sorteras tillsammans i Tranås.",
+    "aliases": "godispåse,godispåse plast"
+  },
+  {
+    "name": "Kakburk plast",
+    "category": "Plastförpackning",
+    "icon": "🟨",
+    "note": "Plastförpackning. Hård- och mjukplast sorteras tillsammans i Tranås.",
+    "aliases": "kakburk plast"
+  },
+  {
+    "name": "Plasttråg sallad",
+    "category": "Plastförpackning",
+    "icon": "🟨",
+    "note": "Plastförpackning. Hård- och mjukplast sorteras tillsammans i Tranås.",
+    "aliases": "salladstråg,mattråg"
+  },
+  {
+    "name": "Plasthink livsmedel",
+    "category": "Plastförpackning",
+    "icon": "🟨",
+    "note": "Plastförpackning. Hård- och mjukplast sorteras tillsammans i Tranås.",
+    "aliases": "plasthink,livsmedelshink"
+  },
+  {
+    "name": "Bag-in-box kartong",
+    "category": "Pappersförpackning",
+    "icon": "🟦",
+    "note": "Pappersförpackning enligt Tranås sorteringsguide.",
+    "aliases": "bag in box kartong,bag-in-box kartong"
+  },
+  {
+    "name": "Blompapper",
+    "category": "Pappersförpackning",
+    "icon": "🟦",
+    "note": "Pappersförpackning enligt Tranås sorteringsguide.",
+    "aliases": "blompapper,papper runt blommor"
+  },
+  {
+    "name": "Bobin pappcylinder",
+    "category": "Pappersförpackning",
+    "icon": "🟦",
+    "note": "Pappersförpackning enligt Tranås sorteringsguide.",
+    "aliases": "bobin,pappcylinder"
+  },
+  {
+    "name": "Chipsrör Pringles",
+    "category": "Pappersförpackning",
+    "icon": "🟦",
+    "note": "Pappersförpackning enligt Tranås sorteringsguide.",
+    "aliases": "pringles,chipsrör"
+  },
+  {
+    "name": "Cigarettpaket",
+    "category": "Pappersförpackning",
+    "icon": "🟦",
+    "note": "Pappersförpackning enligt Tranås sorteringsguide.",
+    "aliases": "cigarettpaket"
+  },
+  {
+    "name": "Festiskartong",
+    "category": "Pappersförpackning",
+    "icon": "🟦",
+    "note": "Pappersförpackning enligt Tranås sorteringsguide.",
+    "aliases": "festis kartong,festiskartong"
+  },
+  {
+    "name": "Grillkolspåse",
+    "category": "Pappersförpackning",
+    "icon": "🟦",
+    "note": "Pappersförpackning enligt Tranås sorteringsguide.",
+    "aliases": "grillkolspåse"
+  },
+  {
+    "name": "Kaffepaket papper",
+    "category": "Pappersförpackning",
+    "icon": "🟦",
+    "note": "Pappersförpackning enligt Tranås sorteringsguide.",
+    "aliases": "kaffepaket papper,kaffepåse papper"
+  },
+  {
+    "name": "Kakform papper",
+    "category": "Pappersförpackning",
+    "icon": "🟦",
+    "note": "Pappersförpackning enligt Tranås sorteringsguide.",
+    "aliases": "kakform,pappersform"
+  },
+  {
+    "name": "Kartong runt flerpack",
+    "category": "Pappersförpackning",
+    "icon": "🟦",
+    "note": "Pappersförpackning enligt Tranås sorteringsguide.",
+    "aliases": "flerpack kartong,kartong flerpack"
+  },
+  {
+    "name": "Micropopcornpåse",
+    "category": "Pappersförpackning",
+    "icon": "🟦",
+    "note": "Pappersförpackning enligt Tranås sorteringsguide.",
+    "aliases": "micropopcornpåse,popcornpåse"
+  },
+  {
+    "name": "O´boy-burk",
+    "category": "Pappersförpackning",
+    "icon": "🟦",
+    "note": "Pappersförpackning enligt Tranås sorteringsguide.",
+    "aliases": "oboy burk,oboykartong"
+  },
+  {
+    "name": "Pappersmugg",
+    "category": "Pappersförpackning",
+    "icon": "🟦",
+    "note": "Pappersförpackning enligt Tranås sorteringsguide.",
+    "aliases": "pappersmugg,mugg papper"
+  },
+  {
+    "name": "Papperspåse mjöl",
+    "category": "Pappersförpackning",
+    "icon": "🟦",
+    "note": "Pappersförpackning enligt Tranås sorteringsguide.",
+    "aliases": "mjölsäck pappers,mjölpåse"
+  },
+  {
+    "name": "Papperspåse godis",
+    "category": "Pappersförpackning",
+    "icon": "🟦",
+    "note": "Pappersförpackning enligt Tranås sorteringsguide.",
+    "aliases": "godispåse papper"
+  },
+  {
+    "name": "Snusdosa papper",
+    "category": "Pappersförpackning",
+    "icon": "🟦",
+    "note": "Pappersförpackning enligt Tranås sorteringsguide.",
+    "aliases": "snusdosa papper"
+  },
+  {
+    "name": "Tablettask",
+    "category": "Pappersförpackning",
+    "icon": "🟦",
+    "note": "Pappersförpackning enligt Tranås sorteringsguide.",
+    "aliases": "tablettask papper"
+  },
+  {
+    "name": "Tårtkartong",
+    "category": "Pappersförpackning",
+    "icon": "🟦",
+    "note": "Pappersförpackning enligt Tranås sorteringsguide.",
+    "aliases": "tårtkartong"
+  },
+  {
+    "name": "Tårtpapper",
+    "category": "Pappersförpackning",
+    "icon": "🟦",
+    "note": "Pappersförpackning enligt Tranås sorteringsguide.",
+    "aliases": "tårtpapper"
+  },
+  {
+    "name": "Toalettrulle",
+    "category": "Pappersförpackning",
+    "icon": "🟦",
+    "note": "Pappersförpackning enligt Tranås sorteringsguide.",
+    "aliases": "toalettrulle,pappersrulle"
+  },
+  {
+    "name": "Tvättmedelspaket",
+    "category": "Pappersförpackning",
+    "icon": "🟦",
+    "note": "Pappersförpackning enligt Tranås sorteringsguide.",
+    "aliases": "tvättmedelspaket,pulvertvätt kartong"
+  },
+  {
+    "name": "Vällingpaket",
+    "category": "Pappersförpackning",
+    "icon": "🟦",
+    "note": "Pappersförpackning enligt Tranås sorteringsguide.",
+    "aliases": "vällingpaket"
+  },
+  {
+    "name": "Våtservett styckförpackning papper",
+    "category": "Pappersförpackning",
+    "icon": "🟦",
+    "note": "Pappersförpackning enligt Tranås sorteringsguide.",
+    "aliases": "våtservett förpackning papper"
+  },
+  {
+    "name": "Wellpapp små mängder",
+    "category": "Pappersförpackning",
+    "icon": "🟦",
+    "note": "Pappersförpackning enligt Tranås sorteringsguide.",
+    "aliases": "wellpapp,papp små mängder"
+  },
+  {
+    "name": "Yoghurtpaket",
+    "category": "Pappersförpackning",
+    "icon": "🟦",
+    "note": "Pappersförpackning enligt Tranås sorteringsguide.",
+    "aliases": "yoghurtpaket papper"
+  },
+  {
+    "name": "Smörask ytterkartong",
+    "category": "Pappersförpackning",
+    "icon": "🟦",
+    "note": "Pappersförpackning enligt Tranås sorteringsguide.",
+    "aliases": "smörask kartong,smörpaket kartong"
+  },
+  {
+    "name": "Smörask plast",
+    "category": "Plastförpackning",
+    "icon": "🟨",
+    "note": "Den tomma plastbägaren och locket sorteras som plastförpackning.",
+    "aliases": "smörask,smörpaket plast,margarinburk plast"
+  },
+  {
+    "name": "Margarinförpackning plast",
+    "category": "Plastförpackning",
+    "icon": "🟨",
+    "note": "Den tomma plastförpackningen sorteras som plastförpackning.",
+    "aliases": "margarinburk,margarin förpackning,milda burk,milda plastbägare"
+  },
+  {
+    "name": "Margarinförpackning kartong",
+    "category": "Pappersförpackning",
+    "icon": "🟦",
+    "note": "Kartongdelen sorteras som pappersförpackning.",
+    "aliases": "margarin kartong,smörask kartong"
   }
 ]
