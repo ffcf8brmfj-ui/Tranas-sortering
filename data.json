@@ -7070,5 +7070,20 @@
     "icon": "🟦",
     "note": "Kartongdelen sorteras som pappersförpackning.",
     "aliases": "margarin kartong,smörask kartong"
+  },
+  {
+    "name": "Vispgrädde",
+    "category": "Matavfall",
+    "icon": "🟫",
+    "note": "Grädde och vispgrädde sorteras som matavfall.",
+    "aliases": [
+      "laktosfri vispgrädde",
+      "vispgrädde laktosfri",
+      "grädde",
+      "matlagningsgrädde",
+      "kaffegrädde",
+      "Arla vispgrädde",
+      "laktosfri grädde"
+    ]
   }
 ]
