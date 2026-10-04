@@ -7084,6 +7084,25 @@
       "kaffegrädde",
       "Arla vispgrädde",
       "laktosfri grädde"
-    ]
+    ],
+    "barcodes": [
+      "6408432095733"
+    ],
+    "packaging": {
+      "status": "known",
+      "parts": [
+        {
+          "material": "Pappersförpackning",
+          "icon": "🟦",
+          "note": "Kartongen."
+        },
+        {
+          "material": "Plastförpackning",
+          "icon": "🟨",
+          "note": "Plastkorken – separera om den går att ta loss."
+        }
+      ],
+      "note": "För just denna produkt/förpackning."
+    }
   }
 ]

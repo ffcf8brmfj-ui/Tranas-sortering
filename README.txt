@@ -1,6 +1,5 @@
-Tranås Sortering 4.1.5
-- 600+ sökbara poster
-- smart sökning med vardagsord, synonymer och stavfel
-- kamera + OCR med markerbart textområde
-- förbättrad OCR-bearbetning
-- fungerar offline för appens eget innehåll
+Tranås Sortering 5.3
+
+Streckkod visar nu separat INNEHÅLL och FÖRPACKNING.
+Appen gissar inte förpackningsmaterial när uppgift saknas.
+Open Food Facts används som fallback för produkt- och förpackningsuppgifter.
